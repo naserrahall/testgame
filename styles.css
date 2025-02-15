@@ -1,0 +1,189 @@
+body {
+    font-family: Arial, sans-serif;
+    text-align: center;
+    background-color: #f4f4f9;
+    color: #333;
+    padding: 20px;
+  }
+  .container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    transition: all 0.3s ease-in-out;
+  }
+  .header {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+    text-transform: uppercase;
+  }
+
+  /* Team Section */
+  .team-section, .category-section {
+    margin-bottom: 20px;
+  }
+  .team-input {
+    padding: 10px;
+    margin: 5px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    width: 45%;
+    font-size: 16px;
+    text-align: center;
+  }
+  #startGameButton:disabled {
+    background-color: #ccc;
+    color: #666;
+    cursor: not-allowed;
+  }
+  button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4CAF50;
+    color: #fff;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  button:hover:not(:disabled) {
+    background-color: #45a049;
+  }
+
+  /* Category Selection */
+  .category {
+    display: inline-block;
+    margin: 10px;
+    padding: 15px 20px;
+    background-color: #e7e7e7;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s ease;
+  }
+  .category.selected {
+    background-color: #4CAF50;
+    color: white;
+  }
+  .game-board {
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  /* Game Board */
+  .scoreboard {
+    font-size: 24px;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-around;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: #f0f8ff;
+  }
+  .team-score {
+    font-size: 28px;
+    font-weight: bold;
+    color: #333;
+  }
+  .timer {
+    font-size: 28px;
+    font-weight: bold;
+    color: red;
+  }
+
+  .turn-indicator {
+    font-size: 22px;
+    font-weight: bold;
+    margin-bottom: 20px;
+    color: #333;
+  }
+
+  .selected-categories {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+    gap: 15px;
+  }
+  .question-column {
+    flex: 1;
+    background-color: #f1f1f1;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 15px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    max-width: 250px;
+    min-height: 400px;
+  }
+  .question {
+    margin: 8px;
+    padding: 10px;
+    background-color: #eee;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: transform 0.2s, background-color 0.3s ease;
+  }
+  .question:hover {
+    transform: scale(1.05);
+    background-color: #dcdcdc;
+  }
+  .question.answered {
+    background-color: #ccc;
+    cursor: not-allowed;
+  }
+  #questionDisplay {
+    font-size: 20px;
+    padding: 25px;
+    margin-top: 20px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    background-color: #f9f9f9;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+    display: none;
+    animation: fadeIn 0.5s ease-in-out;
+  }
+
+  /* Controls */
+  .control-buttons {
+    margin-top: 20px;
+  }
+  .control-buttons button {
+    margin: 0 10px;
+  }
+
+  /* Result Page */
+  #resultPage {
+    display: none;
+  }
+  .winner {
+    font-size: 32px;
+    font-weight: bold;
+    color: #4CAF50;
+    margin-bottom: 20px;
+  }
+  .final-score {
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+
+  /* Animations */
+  @keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+  }
+  .team-score {
+    font-size: 24px;
+    font-weight: bold;
+    color: #333;
+}
+
+#team1Attempts, #team2Attempts {
+    font-size: 14px;
+    color: #555;
+    margin-top: 5px;
+}

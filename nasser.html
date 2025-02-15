@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>لعبة المعلومات الكروية</title>
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div class="container">
+  <!-- Header Section -->
+  <div class="header">لعبة المعلومات الكروية</div>
+
+  <!-- Team Input Section -->
+  <div class="team-section">
+    <input type="text" id="team1" class="team-input" placeholder="ادخل اسم اللاعب 1">
+    <input type="text" id="team2" class="team-input" placeholder="ادخل اسم اللاعب 2">
+    <button onclick="startGame()" id="startGameButton" disabled>ابدأ اللعبة</button>
+  </div>
+
+  <!-- Category Selection Section -->
+  <div class="category-section">
+    <div>اختار اربع فئات:</div>
+    <div id="categories">
+      <div class="category" onclick="selectCategory(this)">الدوري الاسباني</div>
+      <div class="category" onclick="selectCategory(this)">الدوري الانجليزي</div>
+      <div class="category" onclick="selectCategory(this)">الدوري الايطالي</div>
+      <div class="category" onclick="selectCategory(this)">دوري ابطال اوروبا</div>
+      <div class="category" onclick="selectCategory(this)">كأس العالم</div>
+      <div class="category" onclick="selectCategory(this)">ارقام لاعبين</div>
+      <div class="category" onclick="selectCategory(this)">مسيرة لاعب</div>
+    </div>
+  </div>
+
+  <!-- Game Board Section -->
+  <div class="game-board" id="gameBoard">
+    <div class="scoreboard">
+
+      <div class="team-score" id="team1Score">Team 1: 0</div>
+      <div id="team1Attempts" style="font-size: 14px; margin-top: 5px;">
+        <div>عدد المحاولات المتبقي لتغيير السؤال: <span id="team1ChangeAttempts">2</span></div>
+        <div>عدد المحاولات المبتقي لعرض الخيارات: <span id="team1ShowAttempts">2</span></div>
+    </div>
+
+      <div class="timer">Time: <span id="timer">30</span>s</div> 
+
+      <div class="team-score" id="team2Score">Team 2: 0</div>
+      <div id="team2Attempts" style="font-size: 14px; margin-top: 5px;">
+        <div>عدد المحاولات المتبقي لتغيير السؤال: <span id="team2ChangeAttempts">2</span></div>
+        <div>عدد المحاولات المبتقي لعرض الخيارات: <span id="team2ShowAttempts">2</span></div>
+      </div>
+
+    </div>
+    
+    <div id="turnIndicator" class="turn-indicator"></div>
+    <div id="selectedCategories" class="selected-categories"></div>
+    <div id="questionDisplay" class="question-display"></div>
+    <div class="remaining-questions" id="remainingQuestions">Remaining Questions: 28</div>
+
+
+    <!-- Control Buttons -->
+    <div class="control-buttons">
+      <button id="pauseResumeButton" onclick="togglePauseResume()" style="display:none">ايقاف المؤقت</button>
+      <button onclick="endGame()">انهاء اللعبة</button>
+      <button onclick="restartGame()">اعادة اللعبة</button>
+    </div>
+  </div>
+
+  <!-- Result Page Section -->
+  <div id="resultPage" class="container">
+    <div id="winningTeam" class="winner"></div>
+    <div id="finalScore" class="final-score"></div>
+    <div id="matchDetails"></div>
+    <button onclick="backToSelectCategories()">العودة لاختيار فئات جديدة</button>
+    <button onclick="restartGame()">اعادة اللعبة بنفس الفئات</button>
+  </div>
+</div>
+<script src="football.js" defer></script>
+
+</body>
+</html>
