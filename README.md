@@ -13,12 +13,11 @@ An interactive game to test football trivia between players using HTML, CSS, Jav
 
 ## How to run the project
 
-1. Open the `index.html` file in a web browser.
-2. Enter the players' names in the designated fields.
+1. Suppose there is a third party. Open the `index.html` file in a web browser.
+2. The third party enters the players' names in the designated fields.
 3. Choose four categories from the available categories.
 4. Click the "Start Game" button.
-5. Questions are displayed based on the selected categories, and players answer to earn points.
-
+5. Questions are displayed based on the selected categories, and players answer to earn points (players must tell the answer to the third party); then the third party determines whether the answer is correct or incorrect.
 6. The game ends when all questions are finished, and the final score is displayed.
 
 ## Game Features
