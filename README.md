@@ -1,46 +1,46 @@
-# لعبة المعلومات الكروية
+# Football trivia game
 
-## وصف المشروع
+## Project Description
 
-لعبة تفاعلية لاختبار المعلومات الكروية بين لاعبين باستخدام HTML، CSS، JavaScript وملف JSON يحتوي على الأسئلة والأجوبة. يمكن للاعبين اختيار الفئات والإجابة على الأسئلة لكسب النقاط.
+An interactive game to test football trivia between players using HTML, CSS, JavaScript and a JSON file containing questions and answers. Players can choose categories and answer questions to earn points.
 
-## محتويات المشروع
+## Project Contents
 
-- **index.html**: يحتوي على الهيكل الأساسي للعبة، بما في ذلك إدخال أسماء الفرق، تحديد الفئات، ولوحة اللعبة.
-- **style.css**: يحتوي على تنسيقات وتصميم الواجهة، مما يضمن تجربة مستخدم سلسة وجذابة.
-- **football.js**: يحتوي على منطق اللعبة، مثل تحميل الأسئلة، التبديل بين الفرق، التحكم في المؤقت، وتحديث النتائج.
-- **questions.json**: يحتوي على مجموعة من الأسئلة المصنفة حسب الفئات ومستويات الصعوبة.
+- **index.html**: Contains the basic structure of the game, including entering team names, defining categories, and the game board.
+- **style.css**: Contains the formats and design of the interface, ensuring a smooth and attractive user experience.
+- **football.js**: Contains the game logic, such as loading questions, switching between teams, controlling the timer, and updating results.
+- **questions.json**: Contains a set of questions classified by categories and difficulty levels.
 
-## كيفية تشغيل المشروع
+## How to run the project
 
-1. افتح ملف `index.html` في متصفح الويب.
-2. أدخل أسماء اللاعبين في الحقول المخصصة.
-3. اختر أربع فئات من بين الفئات المتاحة.
-4. اضغط على زر "ابدأ اللعبة".
-5. يتم عرض الأسئلة بناءً على الفئات المختارة، ويقوم اللاعبون بالإجابة لكسب النقاط.
-6. تنتهي اللعبة عند انتهاء جميع الأسئلة، ويتم عرض النتيجة النهائية.
+1. Open the `index.html` file in a web browser.
+2. Enter the players' names in the designated fields.
+3. Choose four categories from the available categories.
+4. Click the "Start Game" button.
+5. Questions are displayed based on the selected categories, and players answer to earn points.
 
-## ميزات اللعبة
+6. The game ends when all questions are finished, and the final score is displayed.
 
-- إمكانية اختيار الفئات قبل بدء اللعبة.
-- مستويات مختلفة من الأسئلة (سهلة، متوسطة، صعبة، مستحيلة).
-- نظام مؤقت لكل سؤال.
-- خيارات تغيير السؤال وعرض الخيارات المتاحة.
-- حساب النقاط لكل فريق بناءً على الإجابات الصحيحة.
-- إمكانية إعادة تشغيل اللعبة بنفس الفئات أو اختيار فئات جديدة.
+## Game Features
 
-## متطلبات التشغيل
+- Ability to choose categories before starting the game.
+- Different levels of questions (easy, medium, difficult, impossible).
+- Timer system for each question.
+- Options to change the question and display the available options.
+- Calculating points for each team based on correct answers.
+- Ability to restart the game with the same categories or choose new categories.
 
-- متصفح حديث يدعم JavaScript.
-- لا حاجة لتثبيت أي مكتبات خارجية.
+## Operating Requirements
 
-## تحسينات مستقبلية
+- Modern browser that supports JavaScript.
+- No need to install any external libraries.
 
-- إضافة مؤثرات صوتية عند الإجابة على الأسئلة.
-- دعم اللعب الجماعي عبر الإنترنت.
-- إضافة المزيد من الفئات والأسئلة المتنوعة.
+## Future Improvements
 
-## المساهمة في المشروع
+- Adding sound effects when answering questions.
+- Support for online multiplayer.
+- Adding more categories and diverse questions.
 
-إذا كنت ترغب في تحسين اللعبة أو إضافة ميزات جديدة، يمكنك تعديل الأكواد وإرسال اقتراحاتك.
+## Contributing to the Project
 
+If you want to improve the game or add new features, you can modify the codes and send your suggestions.
