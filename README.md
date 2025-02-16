@@ -1,4 +1,4 @@
-# Football-Questions-Game
+# Football Questions Game
 
 ## Project Description
 
